@@ -1,0 +1,30 @@
+.search-list {
+  position: absolute;
+  border: 1px solid #f1f1f1;
+  padding: 0;
+  margin: 0;
+  height: 15rem;
+  width: 100%;
+  overflow: auto;
+}
+
+.search-item {
+  padding: 0.5rem;
+  border-top: 1px solid #f1f1f1;
+  cursor: pointer;
+  background-color: white;
+}
+
+.search-item:hover {
+  background-color: #f1f1f1;
+}
+
+.search-item.active {
+  background-color: #f1f1f1;
+}
+
+.items-match {
+  padding: 0.25rem;
+  border-top: 1px solid lightblue;
+  border-bottom: 1px solid lightblue;
+}
