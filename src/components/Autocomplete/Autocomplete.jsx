@@ -1,10 +1,10 @@
 import { useRef, useState } from "react";
 import { flushSync } from "react-dom";
 import { filterUserItems } from "../../helper/utils";
-import { SearchItem } from "../SearchItem/SearchItem";
+import { SearchList } from "../SearchList/SearchList";
 import "./Autocomplete.css";
 
-const Autocomplete = (props) => {
+export const Autocomplete = (props) => {
   const { users } = props;
   const [searchText, setSearchText] = useState("");
   const [activeSuggestionIndex, setActiveSuggestionIndex] = useState(-1);
@@ -77,7 +77,7 @@ const Autocomplete = (props) => {
         placeholder="Search users by ID, address, name"
         className="search-box"
       />
-      <SearchItem
+      <SearchList
         searchText={searchText}
         searchTextInLowerCase={searchTextInLowerCase}
         filteredUsers={filteredUsers}
@@ -88,5 +88,3 @@ const Autocomplete = (props) => {
     </div>
   );
 };
-
-export default Autocomplete;

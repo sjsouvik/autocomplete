@@ -1,4 +1,4 @@
-import Autocomplete from "./components/Autocomplete/Autocomplete";
+import { Autocomplete } from "./components";
 import { useFetch } from "./hooks/useFetch";
 import { loadUsers } from "./helper/utils";
 import "./App.css";
